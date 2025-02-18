@@ -1,3 +1,123 @@
+/*
+COLOR PALLATE
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+}
+body {
+  background: #f6f6f6; 
+  margin: 0;
+}
+
+/* links */
+a {
+  color: #1ec854;
+}
+a:hover{
+  color: #bcaa96;
+  text-decoration: none;
+}
+
+footer a {
+  color: #ef51b3;
+}
+footer a:hover {
+  color: #1ec854;
+}
+
+.github-link {
+  color: #dbdbdb;
+  background: #ad24c8;
+  text-decoration: none;
+}
+
+.content-wrapper{
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
+}
+
+
+
 body {
   background: rgb(189, 232, 192);
+}
+
+h2 {
+  color:brown 
+}
+
+#undertitle {
+  background: yellow;
+}
+
+.large-text {
+  font-size: 26px;
+  color: blueviolet;
+}
+
+/* HOME
+------------------------------------*/
+.home {
+  background: url(../images/bg-home-office-studio.jpg) no-repeat;
+  background-size: cover;
+}
+
+.home .content-wrapper {
+  background: rgb(255, 255, 255 / 0.9);
+}
+
+/* RESUME
+------------------------------------*/
+.resume header::before {
+  background: url(../images/bg-home-office-studio.jpg) center;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 375px;
+
+}
+
+/* Profile
+------------------------------------*/
+
+/* Projects
+------------------------------------*/
+
+/* Work Experience
+------------------------------------*/
+
+/* Education
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+
+footer {
+  background: #222;
+  color: aliceblue;
+}
+
+.socials{
+  list-style-type: none;
+
+  padding:0;
+}
+
+.socials li{
+  display: inline;
+}
+.socials img{
+  width: 32px;
 }
