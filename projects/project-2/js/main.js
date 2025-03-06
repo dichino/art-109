@@ -30,8 +30,12 @@ document.addEventListener("DOMContentLoaded", setRandomAnimationDuration)
 document.addEventListener("DOMContentLoaded", setRandomAnimationDelay)
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("background-audio-1").volume = 0.01;
+    const audio = document.getElementById("background-audio-3");
+    audio.volume = 0.04;
+    audio.muted = false; // Unmute once DOM is ready
 });
+
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("background-audio-1").volume = 0.03;    
     document.getElementById("background-audio-2").volume = 0.04;
 });

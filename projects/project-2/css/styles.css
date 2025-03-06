@@ -59,6 +59,44 @@ html, body{
   height: 100vh;
 }
 
+.type-container{
+  display: inline-block;
+}
+
+.type-text{
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  display: block;
+  margin-bottom: 20px;
+  animation: typing 3s forwards, cursor 0.8s step-end infinite alternate;
+}
+
+.type-text:nth-child(1) {
+  animation-delay: .5s; 
+  background-color: red;
+}
+
+.type-text:nth-child(2) {
+  animation-delay: 4.5s; 
+  background-color: red;
+}
+
+.type-text:nth-child(3) {
+  animation-delay: 8.5s;
+  color: red;
+}
+@keyframes cursor {
+  50% { border-color: transparent;}
+}
+@keyframes typing {
+  from {width: 0;}
+  to {width: 31ch;}
+}
 
 @keyframes expand-button{
   0% {
@@ -89,7 +127,7 @@ html, body{
 
 button{
   position: absolute;
-  background-color: rgb(154, 16, 16); 
+  background-color: rgb(255, 0, 0); 
   color: rgb(239, 239, 239); 
   border-radius: 50%;
   border: none;
@@ -100,6 +138,7 @@ button{
   transform: translateX(-50%);
   animation: expand-button forwards ease-in-out;
   animation-delay: 0s;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #button-school{
