@@ -1,13 +1,128 @@
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; 
+
+}
+
+
+body {
+   font-size: 1.6rem;
+  /* font-size 1.6rem is now the same as 16px */
+  line-height: 1.6;
+}
+
+html, body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.life {
+  background-image: url(/images/peace.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@keyframes expand-button{
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  100%{
+    width: 70vw;
+    height: 70vh;
   }
   
-  .button {background-color: #e0240b;} /* Green */
+}
+
+.button-container{
+  border: hiddens;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  animation: expand-button-container 20s forwards 1s ease-in-out;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+button{
+  position: absolute;
+  background-color: rgb(154, 16, 16); 
+  color: rgb(239, 239, 239); 
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+  animation: expand-button forwards ease-in-out;
+  animation-delay: 0s;
+}
+
+#button-school{
+  top: 10%; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+#button-family{
+  top: 30%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+#button-love{
+  top: 30%;
+  right: 10%;
+  transform: translateY(-50%);	
+}
+#button-work{
+  bottom: 10%;
+  left: 30%;
+  transform: translateX(-50%);	
+}
+#button-change{
+  bottom: 10%;
+  right: 30%;
+}
