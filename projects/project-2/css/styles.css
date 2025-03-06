@@ -165,3 +165,43 @@ button{
   bottom: 10%;
   right: 30%;
 }
+
+@media (max-width: 768px) {
+  .button-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .button {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  #button-school {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #button-family {
+    top: 40%;
+    left: 15%;
+  }
+
+  #button-love {
+    top: 40%;
+    right: 15%;
+  }
+
+  #button-work {
+    bottom: 15%;
+    left: 20%;
+  }
+
+  #button-change {
+    bottom: 15%;
+    right: 20%;
+  }
+}
+
