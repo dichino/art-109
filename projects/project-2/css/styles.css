@@ -43,7 +43,7 @@ html, body{
 }
 
 .life {
-  background-image: url(/images/peace.jpg);
+  background-image: url(/images/peace.jpg) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
