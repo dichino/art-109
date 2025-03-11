@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #28a745;
+  background-color: #1b4124;
   /* Green background */
   color: #fff;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #e1a729;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
@@ -110,7 +110,7 @@ body {
   }
 }
 h1, h2, h3 {
-  font-family: "Caveat",cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400 ;
   margin: 0;
 }
@@ -130,25 +130,17 @@ h3{
   font-size: 2.4rem;
 }
 
-/* links */
-a {
-  color: #1ec854;
-}
-a:hover{
-  color: #bcaa96;
-  text-decoration: none;
-}
 
 footer a {
-  color: #ef51b3;
+  color: #e1a729;
 }
 footer a:hover {
-  color: #1ec854;
+  color: #1c7430;
 }
 
 .github-link { /* button*/
   color: #dbdbdb;
-  background: #b51a1a;
+  background: #1c7430;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -168,26 +160,23 @@ footer a:hover {
 
 
 body {
-  background: rgb(189, 232, 192);
+  background: rgb(246, 234, 203);
 }
 
 h2 {
-  color:brown 
+  color: #e1a729
 }
 
-#undertitle {
-  background: yellow;
-}
 
 .large-text {
   font-size: 26px;
-  color: blueviolet;
+  color: #1b4124;
 }
 
 /* HOME
 ------------------------------------*/
 .home {
-  background: url(../images/bg-home-office-studio.jpg) no-repeat;
+  background: url(../images/aurelis_boralis.jpg) no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -211,7 +200,7 @@ h2 {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-  background: url(../images/bg-home-office-studio.jpg) center;
+  background: url(../images/paris.jpeg) center;
   background-size: cover;
   content: "";
   display: block;
@@ -223,24 +212,28 @@ h2 {
 }
 
 .resume-section h2{
-  border-bottom: 2px dashed #351ec8;
+  border-bottom: 2px dashed #79c81e;
 }
 
-.download-link {
-  background: #ffffff;
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  display: inline-block;
-  padding: 7px;
-  letter-spacing: .1em;
-  line-height: 1;
-  border-radius: 10px;
+/* PROJECTS
+------------------------------------*/
+.project header::before {
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 75px;
 }
+
+.resume-section{
+  margin-bottom: 50px;
+}
+
+.resume-section h2{
+  border-bottom: 2px dashed #1b4124;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
   .download-link{
@@ -367,4 +360,22 @@ footer {
     text-align: center;
     padding: 10px;
   }
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+footer {
+  background: #222;
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
 }
