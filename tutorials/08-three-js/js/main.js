@@ -53,7 +53,7 @@ function init(){
     loader.load("./assets/dog_shiny.gltf", function(gltf){
         const dog = gltf.scene;
         scene.add(dog)
-        dog.position.set(0, 0, 0); 
+        dog.position.set(0, 0, 2); 
     })
     // →→→→→→ Follow next steps in tutorial: // https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
 
@@ -71,6 +71,7 @@ function init(){
     scene.add( circle );
 
     camera.position.z = 5;
+    //dog.position.z = 20;
 
 
 }
