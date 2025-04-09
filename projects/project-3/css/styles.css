@@ -94,7 +94,7 @@
    * color-2(#2F352B)
    * color-3(#1A1A1A)
    */
-    --color-1: hsla(12, 75%, 45%, 1);
+    --color-1: #2E6f40;
     --color-2: hsla(96, 10%, 19%, 1);
     --color-3: hsla(0, 0%, 10%, 1);
 
@@ -102,11 +102,10 @@
    */
     --color-1-lightest: hsla(12, 75%, 75%, 1);
     --color-1-lighter : hsla(12, 75%, 65%, 1);
-    --color-1-light   : hsla(12, 75%, 55%, 1);
+    --color-1-light   : #3fa15b;
     --color-1-dark    : hsla(12, 75%, 35%, 1);
     --color-1-darker  : hsla(12, 75%, 25%, 1);
     --color-1-darkest : hsla(12, 75%, 15%, 1);
-
     --color-2-lightest: hsla(96, 10%, 49%, 1);
     --color-2-lighter : hsla(96, 10%, 39%, 1);
     --color-2-light   : hsla(96, 10%, 29%, 1);
@@ -4202,22 +4201,17 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
+
 .s-footer {
-    --bottom-padding: var(--vspace-2_5);
     background-color: var(--color-3);
     margin-top      : auto;
     padding-top     : var(--vspace-6);
-    padding-bottom  : var(--bottom-padding);
     color           : var(--color-gray-15);
 }
 
 .s-footer h5 {
     color     : white;
     margin-top: 0;
-}
-
-.s-footer__block {
-    margin-bottom: var(--vspace-0_5);
 }
 
 .s-footer__block a {
@@ -4243,7 +4237,6 @@ td:last-child {
     --color-btn-stroke-hover     : white;
     --color-btn-stroke-hover-text: var(--color-text-dark);
     margin-top                   : var(--vspace-0_75);
-    margin-bottom                : var(--vspace-2_5);
 }
 
 .s-footer__bottom {
@@ -4259,7 +4252,7 @@ td:last-child {
     display         : block;
     height          : 1px;
     width           : calc(100% - 2 * var(--gutter));
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: rgba(199, 26, 26, 0.04);
     position        : absolute;
     top             : 0;
     left            : var(--gutter);
