@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+  }
+  
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.9);
+  }
+  
+  #quiz-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  #question-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option-button {
+    display: block;
+    background: #1f1f1f;
+    border: 2px solid white;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    color: white;
+  }
+  
+  .option-button:hover {
+    background: white;
+    color: black;
+  }
+  
+  #score-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  #reset-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #444;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #reset-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #start-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #444;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #start-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #next-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #444;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #next-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .option-button.selected {
+    background-color: limegreen;
+    color: black;
+  }
+  
+  #grass-message {
+    display:none; 
+    position:fixed; 
+    bottom:20px; 
+    left:50%; 
+    transform:translateX(-50%); 
+    background:rgb(15, 90, 15); 
+    padding:10px 20px; 
+    border-radius:10px; 
+    box-shadow:0 0 10px rgba(0,0,0,0.3); 
+    font-weight:bold;
+    font-size: 3rem;
+  }
