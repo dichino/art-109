@@ -67,7 +67,7 @@ function showFinalMessage() {
   questionText.textContent = "Quiz complete!";
   optionsContainer.innerHTML = "";
   if (score === questions.length) {
-    scoreText.textContent = `Perfect! ${score}/${questions.length} — Click the grass 🌿`;
+    scoreText.textContent = `Perfect! ${score}/${questions.length} — You cloud have clicked the grass the whole time 🌿`;
   } else if (score >= 4) {
     scoreText.textContent = `Great job! ${score}/${questions.length} — You still have to try again to touch the grass.`;
   } else {
@@ -113,16 +113,44 @@ window.onload = () => {
 
 
 document.body.addEventListener("click", function (e) {
-    // Don't trigger if clicking on a button thing
-    const isInteractive = e.target.closest("#quiz-container, button");
+    document.getElementById("clown_final").volume = 0.5;
+    const clownAudio = document.getElementById("clown_final");
+
+    const isInteractive = e.target.closest("#quiz-container, .option-button, #start-button, #next-button, #reset-button");
+    if (!isInteractive) {
+        clownAudio.play();
+    }
+
     if (!isInteractive) {
       const message = document.getElementById("grass-message");
-      message.style.display = "block";
-      
+      message.style.display = "block";      
       // goes out after 3 sec
       setTimeout(() => {
         message.style.display = "none";
-      }, 3000);
+      }, 10000);
     }
   });
   
+
+const backgroundAudio1 = document.getElementById("background1-audio");
+backgroundAudio1.volume = 0.2; 
+
+const backgroundAudio2 = document.getElementById("background2-audio");
+backgroundAudio2.volume = 0.2; 
+
+  const clickSound = document.getElementById('click-sound');
+
+
+// Get all bttons
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    clickSound.currentTime = 0; // rewinding 
+    clickSound.play();
+  });
+});
+
+
+
+
