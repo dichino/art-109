@@ -151,6 +151,17 @@ buttons.forEach(button => {
   });
 });
 
+//inscurance for the usic
+const playBackgroundMusic = () => {
+  document.getElementById("background1-audio").play();
+  document.getElementById("background2-audio").play();
+
+  document.body.removeEventListener("click", playBackgroundMusic);
+};
+
+document.body.addEventListener("click", playBackgroundMusic);
+
+
 
 
 
